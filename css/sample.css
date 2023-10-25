@@ -27,10 +27,10 @@ footer{
     text-align: center;
 }
 p{
-    font-size:200%;
+    font-size: 24px;
     text-align: center;
     border-bottom:1px solid #fff;
-    height:200px;
+    /* height:200px; */
 }
 ul{
     padding: 0;
@@ -60,7 +60,6 @@ ul{
     cursor: pointer;
     color:#000000;
 }
-
 
 li:hover{
     background: #0d7dfd;
@@ -143,4 +142,8 @@ td{
 
 .accessories_color_picker{
     margin-top: 50px;
+}
+
+div style{
+    border: solid black 0.3em;
 }

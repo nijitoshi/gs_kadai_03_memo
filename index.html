@@ -57,9 +57,25 @@ $("#save").on("click",function(){
     const key = $("#key").val();
     const value = [$(".tops_color_picker").val()+" "+$("#tops").val(), $(".bottoms_color_picker").val()+" "+$("#bottoms").val(), $(".shoes_color_picker").val()+" "+$("#shoes").val(), $(".accessories_color_picker").val()+" "+$("#accessories").val()];
     localStorage.setItem(key, value);
-    const html = '<tr><th>'+key+'</th><td>'+value[0]+'</td><td>'+value[1]+'</td><td>'+value[2]+'</td><td>'+value[3]+'</td>/tr>';
+    const tops_color = value[0].split(" ")[0]
+    const bottoms_color = value[1].split(" ")[0]
+    const shoes_color = value[2].split(" ")[0]
+    const accessories_color = value[3].split(" ")[0]
+
+    const tops_text = value[0].split(" ")[1]
+    const bottoms_text = value[1].split(" ")[1]
+    const shoes_text = value[2].split(" ")[1]
+    const accessories_text = value[3].split(" ")[1]
+
+    // console.log(value[0].split(" ")[0])
+    const html = '<tr><th>'+key+'</th><td><div style="background-color:'+tops_color+'; width: 10px; height: 10px; border-color: black"></div><p> '+tops_text+'</p></td><td><div style="background-color:'+bottoms_color+'; width: 10px; height: 10px; border-color: black"></div><p>'+bottoms_text+'</p></td><td><div style="background-color:'+shoes_color+'; width: 10px; height: 10px; border-color: black"></div><p>'+shoes_text+'</p></td><td><div style="background-color:'+accessories_color+'; width: 10px; height: 10px; border-color: black"></div><p>'+accessories_text+'</p></td>/tr>';
 $("#list").append(html);
 });
+
+
+
+// <div style="color:tops_color"></div> 
+
 
 
 //2.clear クリックイベント
@@ -80,7 +96,18 @@ for(let i=0; i<localStorage.length; i++){
     const value =localStorage.getItem(key);
     const str = value;
     const itemData = str.split(',');
-    const html = '<tr><th>'+key+'</th><td>'+itemData[0]+'</td><td>'+itemData[1]+'</td><td>'+itemData[2]+'</td><td>'+itemData[3]+'</td>/tr>';
+
+    const tops_color = itemData[0].split(" ")[0]
+    const bottoms_color = itemData[1].split(" ")[0]
+    const shoes_color = itemData[2].split(" ")[0]
+    const accessories_color = itemData[3].split(" ")[0]
+
+    const tops_text = itemData[0].split(" ")[1]
+    const bottoms_text = itemData[1].split(" ")[1]
+    const shoes_text = itemData[2].split(" ")[1]
+    const accessories_text = itemData[3].split(" ")[1]
+
+    const html = '<tr><th>'+key+'</th><td><div style="background-color:'+tops_color+'; width: 10px; height: 10px; border-color: 1px, black"></div><p> '+tops_text+'</p></td><td><div style="background-color:'+bottoms_color+'; width: 10px; height: 10px; border-color: black"></div><p> '+bottoms_text+'</p></td><td><div style="background-color:'+shoes_color+'; width: 10px; height: 10px; border-color: black"></div><p> '+shoes_text+'</p></td><td><div style="background-color:'+accessories_color+'; width: 10px; height: 10px"></div><p>'+accessories_text+'</p></td>/tr>';
 $("#list").append(html);
 }
 
