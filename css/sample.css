@@ -1,0 +1,146 @@
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+    width:100%;
+}
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+h1{
+    font-size: 100%;
+}
+
+main{
+    width:100%;
+    display: block;
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:96%;
+    font-size: 80%;
+    margin: 0 3%;
+    text-align: center;
+    margin-top: 20px;
+}
+#save{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #90dd86;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    color:#000000;
+}
+
+#clear{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #df7a7a;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+    color:#000000;
+}
+
+
+li:hover{
+    background: #0d7dfd;
+    color:#fff;
+}
+textarea{
+    margin: 10px 3%;
+    width: 100%;
+    height: 100px;
+    font-size:80%;
+    box-shadow: 3px 3px 3px 3px #555;
+    background-color:rgb(241, 239, 239);
+}
+.input_field {
+    margin-top: 20px;
+    display: flex;
+}
+
+h3 {
+    margin-left: 80px;
+    margin-right: -150px;
+    font-size: 20px;
+    width: 250px;
+}
+
+#key{
+    margin:0 3%;
+    width: 95%;
+    font-size:80%;
+    background-color: rgb(241, 239, 239);
+    box-shadow: 3px 3px 3px 3px #555;
+}
+table{
+    margin: 20px 3%;
+    border:2px solid #8dc3f5;
+    width:96%;
+    
+}
+th{
+    width:10%;
+    font-size:24px;
+    background-color:#d0e7fc;
+    border-bottom: 1px solid #8dc3f5;
+}
+td{
+    width: 20%;
+    font-size:16px;
+    border:2px solid #8dc3f5;
+    background-color:rgb(255, 255, 255);
+    border-bottom: 1px solid #8dc3f5;
+}
+
+#tops_div{
+    display: flex;
+}
+
+.tops_color_picker{
+    margin-top: 50px;
+}
+
+#bottoms_div{
+    display: flex;
+}
+
+.bottoms_color_picker{
+    margin-top: 50px;
+}
+
+#shoes_div{
+    display: flex;
+}
+
+.shoes_color_picker{
+    margin-top: 50px;
+}
+
+#accessories_div{
+    display: flex;
+}
+
+.accessories_color_picker{
+    margin-top: 50px;
+}
